@@ -1,0 +1,62 @@
+body
+{
+    background-color: GhostWhite;
+}
+
+.navbar
+{
+    background-color: FloralWhite;
+}
+
+.jumbotron
+{
+    background-color: MediumAquaMarine;
+    color: Snow;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron-content
+{
+    position: relative;
+    z-index: 1;
+}
+
+.bg-wonderland
+{
+    background-image: url("images/meadow3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.2;
+}
+
+footer
+{
+    background-color: Orchid;
+}
+
+/* Home */
+.parag_start
+{
+    text-align: center;
+}
+
+@media (min-width: 768px)
+{  
+    .carousel
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+    }
+}
+
+.tour_texts_header
+{
+    text-decoration: underline;
+}

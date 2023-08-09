@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      <link href="styles.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>White Rabbit Tours 🐇</title>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">🐇 White Rabbit Tours</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing</a>          
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ</a> 
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact Us<span class="sr-only">(current)</span></a> 
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="bg-wonderland"></div>
+      <div class="jumbotron-content">
+        <h1>Welcome to Wonderland!</h1>
+        <p>Wander in Wonderland with us.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Add text next to the image using row -->
+      <div class="row mt-3 mb-4">
+        <div class="col-5 d-none d-md-block">
+          <img class="img-fluid" alt="White Rabbit's House" src="images/loc.png">
+        </div>
+        <div class="col-md-7">
+          <div>
+            <p class="mb-1">
+              We are here for you!
+              <i class="bi bi-emoji-smile"></i>
+            </p>
+            <p>If you have any questions or suggestions, please do not hesitate to reach out to us.</p>
+      </div>
+    <div>
+            <!-- A from to receive user messages -->
+            <form>
+              <div class="form-group">
+                <label for="name">Your name:</label>
+                <input type="text" class="form-control" id="name" autocomplete="off" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Your message:</label>
+                <textarea class="form-control" id="message" rows="4" autocomplete="off" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-light" style="background-color: pink;">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-3">
+      <div class="container">
+        <p class="mb-1">
+          <i class="bi bi-envelope"></i>
+          You can't find us on social media, cause we are against it. Send a mail instead!
+        </p>
+        <p class="mb-1">
+          <i class="bi bi-geo-alt"></i>
+          White Rabbit's House, Wonderland
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // If submit clicked, alert a message to user
+      document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector("form").addEventListener("submit", function(event) {
+          event.preventDefault();
+
+          let name = document.getElementById("name").value.toLowerCase();
+
+          // Easter egg about American McGee's Alice video game
+          if (name == "american mcgee") {
+            alert("Nope, man.");
+          } else {
+            alert("Thank you!");
+          }
+        });
+      });
+    </script>
+
+  </body>
+</html>

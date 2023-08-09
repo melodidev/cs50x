@@ -1,0 +1,11 @@
+sort1 uses: bubble
+
+How do you know?: Random sort takes the longest time to sort all the values. However if the text was sorted, it is faster than other sort methods.
+
+sort2 uses: merge
+
+How do you know?: It was dramatically faster than other two methods at random texts.
+
+sort3 uses: selection
+
+How do you know?: It gives similiar results in all texts. It has a Theta O value.
